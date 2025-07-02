@@ -21,77 +21,77 @@ const testimonials: Testimonial[] = [
     role: "Product Manager",
     image: "https://randomuser.me/api/portraits/women/5.jpg",
     quote:
-      "We replaced 5 different tools with this one. One workflow builder to rule them all.",
+      "We replaced 5 different tools with this one. Instead of switching between Zapier, Slack bots, internal scripts, and cron jobs, we just built it all in one place. I can finally manage automations myself without depending on engineering every time.",
   },
   {
     name: "Hasan Demir",
     role: "DevOps Engineer",
     image: "https://randomuser.me/api/portraits/men/22.jpg",
     quote:
-      "No more custom cron scripts or Zapier limits — this changed how we automate infrastructure events.",
+      "We used to maintain separate pipelines for cron-based jobs, deployment triggers, and webhook handlers. Now, it all lives in a single, visual workspace that anyone on the team can understand and iterate on. Debugging and scaling is so much easier.",
   },
   {
     name: "Leila Okafor",
     role: "AI Engineer",
     image: "https://randomuser.me/api/portraits/women/12.jpg",
     quote:
-      "LLM integration took literally 5 minutes. It just works — Gemini, OpenAI, everything.",
+      "I plugged in OpenAI and Gemini nodes in minutes and had a fully functional summarization pipeline that sends outputs to Notion and Slack. I didn’t have to write any backend glue logic. This is the fastest way I’ve ever deployed AI into an actual workflow.",
   },
   {
     name: "Oğuz Kılıç",
     role: "Fullstack Developer",
     image: "https://randomuser.me/api/portraits/men/35.jpg",
     quote:
-      "I used to hate no-code tools, but this one actually lets me drop into code. Best of both worlds.",
+      "I used to hate no-code tools because they always felt limiting. But this one feels different. You can start visually, but still drop into actual logic where needed. I added a custom node for Telegram alerts using just a few lines of JS.",
   },
   {
     name: "Julie Tran",
     role: "Startup Founder",
     image: "https://randomuser.me/api/portraits/women/15.jpg",
     quote:
-      "We ship backend features 10x faster now. This platform is our team’s secret weapon.",
+      "As a solo founder, I needed a way to quickly validate ideas without hiring a full dev team. This platform let me prototype my AI-powered backend in just a few days. It's flexible enough for MVPs, but also production-ready when I need to scale.",
   },
   {
     name: "David Park",
     role: "CTO, Fintech Startup",
     image: "https://randomuser.me/api/portraits/men/21.jpg",
     quote:
-      "Built KYC verification, email workflows, and Stripe notifications — all in one place.",
+      "We built automated compliance workflows, KYC checks, Stripe event listeners, and even contract generation — all within this system. Being able to self-host and control our data was a critical requirement, and it delivers.",
   },
   {
     name: "Sarah Meijer",
     role: "Data Analyst",
     image: "https://randomuser.me/api/portraits/women/8.jpg",
     quote:
-      "I’m not a dev, but I build workflows that sync dashboards, email teams, and trigger reports. I love this!",
+      "Before this, I had to request engineering help every time I wanted a new report automation. Now I build flows that fetch, process, and send insights across teams — all by myself. It’s empowering and saves everyone time.",
   },
   {
     name: "Yusuf Arslan",
     role: "Cloud Architect",
     image: "https://randomuser.me/api/portraits/men/26.jpg",
     quote:
-      "Self-hosting + RBAC + full API access — this ticks every enterprise requirement we had.",
+      "We needed an automation system that was scalable, auditable, and secure. The role-based access controls, detailed logging, and node customization options made it easy to adopt for our cloud infrastructure needs.",
   },
   {
     name: "Chloe Tan",
     role: "Design Systems Lead",
     image: "https://randomuser.me/api/portraits/women/17.jpg",
     quote:
-      "We use this for design token syncs, release notes automation, and more. Non-dev friendly, dev-loved.",
+      "We use this for syncing design tokens, publishing release notes, and notifying teams in real-time. It removed the glue code between Figma, GitHub, and Slack — and now everything just flows. Even our designers can trigger deployments!",
   },
   {
     name: "Joseph Kitheka",
     role: "Fullstack Developer",
     image: "https://randomuser.me/api/portraits/men/9.jpg",
     quote:
-      "You’re not locked in. I forked nodes, added custom logic, and even deployed new triggers. Amazing.",
+      "I appreciate how unopinionated and extendable this is. I created custom nodes, added auth logic, and exposed internal APIs as flow triggers. It's rare to find a tool that is both beginner-friendly and hacker-friendly.",
   },
   {
     name: "Roland Tubonge",
     role: "Software Engineer",
     image: "https://randomuser.me/api/portraits/men/13.jpg",
     quote:
-      "If GitHub Actions and Zapier had a baby — this would be it. But open-source and scalable.",
+      "This feels like if GitHub Actions and Zapier had a baby — but open-source and fully customizable. We've migrated 80% of our internal tools over, and I honestly don't see us going back.",
   },
 ];
 
@@ -113,7 +113,7 @@ const testimonialChunks = chunkArray(
 
 export default function WallOfLoveSection() {
   return (
-    <section>
+    <section id="testimonials">
       <div className="py-16 md:py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center">
