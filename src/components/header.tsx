@@ -8,10 +8,11 @@ import { useScroll } from "motion/react";
 import Image from "next/image";
 
 const menuItems = [
-  { name: "Features", href: "#link" },
-  { name: "Solution", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
+  { name: "Features", href: "#features" },
+  { name: "Integrations", href: "#integrations" },
+  { name: "Content", href: "#content" },
+  { name: "Team", href: "#team" },
+  { name: "Testimonials", href: "#testimonials" },
 ];
 
 export const HeroHeader = () => {
