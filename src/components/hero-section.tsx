@@ -87,7 +87,7 @@ export default function HeroSection() {
                       size="lg"
                       className="rounded-xl px-5 text-base"
                     >
-                      <Link href="http://localhost:5173/signin">
+                      <Link href="http://kai-fusion-lyart.vercel.app/signin">
                         <span className="text-nowrap">Get Started</span>
                       </Link>
                     </Button>
