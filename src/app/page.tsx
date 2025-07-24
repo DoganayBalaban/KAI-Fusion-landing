@@ -1,3 +1,5 @@
+"use client";
+import Testimonials from "@/components/testimonials";
 import dynamic from "next/dynamic";
 
 const FeaturesSection = dynamic(() => import("@/components/features-6"));
@@ -7,7 +9,7 @@ const IntegrationsSection = dynamic(
 const TeamSection = dynamic(() => import("@/components/team"));
 const HeroSection = dynamic(() => import("@/components/hero-section"));
 const ContentSection = dynamic(() => import("@/components/content-2"));
-const WallOfLoveSection = dynamic(() => import("@/components/testimonials"));
+const TestimonialsSection = dynamic(() => import("@/components/testimonials"));
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       <IntegrationsSection />
       <ContentSection />
       <TeamSection />
-      <WallOfLoveSection />
+      <TestimonialsSection />
     </div>
   );
 }
