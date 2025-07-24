@@ -1,20 +1,32 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+// Remove the import of testimonials, as it is not needed for the prop type
 
-export const TestimonialsColumn = (props: {
+export type Testimonial = {
+  text: string;
+  image: string;
+  name: string;
+  role: string;
+};
+
+export const TestimonialsColumn = ({
+  className,
+  testimonials,
+  duration,
+}: {
   className?: string;
-  testimonials: typeof testimonials;
+  testimonials: Testimonial[];
   duration?: number;
 }) => {
   return (
-    <div className={props.className}>
+    <div className={className}>
       <motion.div
         animate={{
           translateY: "-50%",
         }}
         transition={{
-          duration: props.duration || 10,
+          duration: duration || 10,
           repeat: Infinity,
           ease: "linear",
           repeatType: "loop",
@@ -24,7 +36,7 @@ export const TestimonialsColumn = (props: {
         {[
           ...new Array(2).fill(0).map((_, index) => (
             <React.Fragment key={index}>
-              {props.testimonials.map(({ text, image, name, role }, i) => (
+              {testimonials.map(({ text, image, name, role }, i) => (
                 <div
                   className="p-10 rounded-3xl border shadow-lg shadow-primary/10 max-w-xs w-full"
                   key={i}
