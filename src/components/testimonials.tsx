@@ -4,58 +4,58 @@ import { motion } from "motion/react";
 
 const testimonials = [
   {
-    text: "This ERP revolutionized our operations, streamlining finance and inventory. The cloud-based platform keeps us productive, even remotely.",
+    text: "This AI workflow builder helped us automate complex tasks effortlessly. Integrating LLMs, tools, and condition-based routing is now drag-and-drop simple.",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
     name: "Briana Patton",
-    role: "Operations Manager",
+    role: "Automation Architect",
   },
   {
-    text: "Implementing this ERP was smooth and quick. The customizable, user-friendly interface made team training effortless.",
+    text: "Onboarding was incredibly fast. The modular node system and intuitive UI let our devs build LangChain pipelines without writing boilerplate code.",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
     name: "Bilal Ahmed",
-    role: "IT Manager",
+    role: "Head of AI Engineering",
   },
   {
-    text: "The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our satisfaction.",
+    text: "Their support team guided us through setting up our first Retrieval-Augmented Generation (RAG) workflow. Now we deploy AI agents with confidence.",
     image: "https://randomuser.me/api/portraits/women/3.jpg",
     name: "Saman Malik",
-    role: "Customer Support Lead",
+    role: "AI Solutions Specialist",
   },
   {
-    text: "This ERP's seamless integration enhanced our business operations and efficiency. Highly recommend for its intuitive interface.",
+    text: "From OpenAI integration to web scraping and embeddings — everything just works. It's a no-brainer for teams building production AI workflows.",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
     name: "Omar Raza",
-    role: "CEO",
+    role: "CTO",
   },
   {
-    text: "Its robust features and quick support have transformed our workflow, making us significantly more efficient.",
+    text: "Custom nodes, realtime flow execution, and Supabase integration make this platform a game-changer for building intelligent backend systems.",
     image: "https://randomuser.me/api/portraits/women/5.jpg",
     name: "Zainab Hussain",
-    role: "Project Manager",
+    role: "Product Manager",
   },
   {
-    text: "The smooth implementation exceeded expectations. It streamlined processes, improving overall business performance.",
+    text: "The visual editor helps us rapidly prototype and deploy AI chains for internal tools. No more spending weeks wiring services manually.",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
     name: "Aliza Khan",
     role: "Business Analyst",
   },
   {
-    text: "Our business functions improved with a user-friendly design and positive customer feedback.",
+    text: "With built-in support for OpenAI, HuggingFace, and webhooks, we launched a GPT-powered assistant in hours, not weeks.",
     image: "https://randomuser.me/api/portraits/men/7.jpg",
     name: "Farhan Siddiqui",
-    role: "Marketing Director",
+    role: "Marketing Automation Lead",
   },
   {
-    text: "They delivered a solution that exceeded expectations, understanding our needs and enhancing our operations.",
+    text: "The workflow engine fits perfectly into our tech stack. It’s flexible enough for engineers and intuitive enough for analysts.",
     image: "https://randomuser.me/api/portraits/women/8.jpg",
     name: "Sana Sheikh",
-    role: "Sales Manager",
+    role: "AI Workflow Consultant",
   },
   {
-    text: "Using this ERP, our online presence and conversions significantly improved, boosting business performance.",
+    text: "Our team's productivity skyrocketed. We now ship AI prototypes with LangChain, vector stores, and retrievers in record time.",
     image: "https://randomuser.me/api/portraits/men/9.jpg",
     name: "Hassan Ali",
-    role: "E-commerce Manager",
+    role: "ML Ops Engineer",
   },
 ];
 
@@ -74,10 +74,6 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center max-w-[540px] mx-auto"
         >
-          <div className="flex justify-center">
-            <div className="border py-1 px-4 rounded-lg">Testimonials</div>
-          </div>
-
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter mt-5">
             What our users say
           </h2>
