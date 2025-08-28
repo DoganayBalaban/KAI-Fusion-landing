@@ -50,7 +50,9 @@ export default function TeamSection() {
                       loading="lazy"
                     />
                   </div>
-                  <span className="mt-2 block text-sm text-white">{member.name}</span>
+                  <span className="mt-2 block text-sm text-white">
+                    {member.name}
+                  </span>
                   <span className="text-white/70 block text-xs">
                     {member.role}
                   </span>
@@ -63,7 +65,7 @@ export default function TeamSection() {
           <h3 className="mb-6 text-lg font-medium text-white">Engineering</h3>
           <div
             data-rounded="full"
-            className="grid grid-cols-2 gap-4 border-t border-white/20 py-6 md:grid-cols-4">
+            className="grid grid-cols-2 gap-4 border-t border-white/20 py-6 md:grid-cols-4"
           >
             {members
               .filter((member) => member.position === "Engineer")
@@ -79,7 +81,9 @@ export default function TeamSection() {
                       loading="lazy"
                     />
                   </div>
-                  <span className="mt-2 block text-sm text-white">{member.name}</span>
+                  <span className="mt-2 block text-sm text-white">
+                    {member.name}
+                  </span>
                   <span className="text-white/70 block text-xs">
                     {member.role}
                   </span>
