@@ -89,12 +89,8 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="default" size="sm">
-                  <Link
-                    href="http://34.141.195.202:23058/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <Button asChild variant="default" size="sm" disabled>
+                  <Link href="#" target="_blank" rel="noopener noreferrer">
                     <svg
                       className="w-4 h-4 mr-1"
                       fill="none"

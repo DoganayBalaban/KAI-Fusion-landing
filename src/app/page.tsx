@@ -105,7 +105,7 @@ export default function Home() {
             GitHub
           </a>
           <a
-            href="http://34.141.195.202:23058/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 min-w-[160px] justify-center"
