@@ -1,29 +1,35 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Twitter, Youtube } from "lucide-react";
+import { Youtube } from "lucide-react";
+import Image from "next/image";
 
 const communityItems = [
   {
     title: "Discord Community",
-    description: "Join our active community for real-time discussions, support, and collaboration.",
-    icon: <MessageSquare className="w-8 h-8" />,
-    stats: "2.5K+ Members",
+    description:
+      "Join our active community for real-time discussions, support, and collaboration.",
+    icon: (
+      <Image src={"/discord.svg"} alt="discordicon" width={50} height={50} />
+    ),
+    stats: "",
     bgColor: "bg-indigo-600/20 border-indigo-500/30",
     href: "#",
   },
   {
-    title: "Twitter Updates",
-    description: "Follow us for the latest updates, tips, and AI workflow best practices.",
-    icon: <Twitter className="w-8 h-8" />,
-    stats: "8K+ Followers",
+    title: "X Updates",
+    description:
+      "Follow us for the latest updates, tips, and AI workflow best practices.",
+    icon: <Image src={"/X.svg"} alt="discordicon" width={40} height={40} />,
+    stats: "",
     bgColor: "bg-blue-600/20 border-blue-500/30",
     href: "#",
   },
   {
     title: "YouTube Tutorials",
-    description: "Watch comprehensive tutorials and learn advanced workflow automation techniques.",
+    description:
+      "Watch comprehensive tutorials and learn advanced workflow automation techniques.",
     icon: <Youtube className="w-8 h-8" />,
-    stats: "15K+ Subscribers",
+    stats: "",
     bgColor: "bg-red-600/20 border-red-500/30",
     href: "#",
   },
@@ -39,7 +45,8 @@ export default function CommunitySection() {
             Join Our Community
           </h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Connect with fellow AI enthusiasts, get support, and stay updated with the latest features and tutorials.
+            Connect with fellow AI enthusiasts, get support, and stay updated
+            with the latest features and tutorials.
           </p>
         </div>
 
@@ -51,9 +58,7 @@ export default function CommunitySection() {
               className={`relative group p-8 rounded-2xl backdrop-blur-sm border transition-all duration-300 hover:scale-105 ${item.bgColor}`}
             >
               <div className="flex flex-col items-center text-center">
-                <div className="mb-4 text-white">
-                  {item.icon}
-                </div>
+                <div className="mb-4 text-white">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {item.title}
                 </h3>
@@ -80,15 +85,26 @@ export default function CommunitySection() {
             Ready to Join the Community?
           </h3>
           <p className="text-white/70 mb-8 max-w-xl mx-auto">
-            Start building amazing AI workflows with our supportive community of developers and creators.
+            Start building amazing AI workflows with our supportive community of
+            developers and creators.
           </p>
           <Button
             asChild
             size="lg"
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
           >
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              <MessageSquare className="w-5 h-5 mr-2" />
+            <Link
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gap-3"
+            >
+              <Image
+                src={"/discord.svg"}
+                alt="discordicon"
+                width={20}
+                height={20}
+              />
               Join Discord Community
             </Link>
           </Button>
