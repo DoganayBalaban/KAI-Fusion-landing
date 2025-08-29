@@ -9,7 +9,7 @@ const IntegrationsSection = dynamic(
 );
 const ContentSection = dynamic(() => import("@/components/content-2"));
 const CommunitySection = dynamic(() => import("@/components/community"));
-const TestimonialsSection = dynamic(() => import("@/components/testimonials"));
+const ContributorsSection = dynamic(() => import("@/components/contributors"));
 const demoData = {
   badge: "KAI Flow Features",
   heading: "Intelligent AI Workflow Automation Platform",
@@ -143,7 +143,7 @@ export default function Home() {
       <IntegrationsSection />
       <ContentSection />
       <CommunitySection />
-      <TestimonialsSection />
+      <ContributorsSection />
     </div>
   );
 }

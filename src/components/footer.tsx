@@ -5,8 +5,8 @@ const links = [
   { title: "Features", href: "#features" },
   { title: "Integrations", href: "#integrations" },
   { title: "Content", href: "#content" },
-  { title: "Team", href: "#team" },
-  { title: "Testimonials", href: "#testimonials" },
+  { title: "Community", href: "#team" },
+  { title: "Contributors", href: "#contributors" },
 ];
 
 export default function FooterSection() {

@@ -1,7 +1,9 @@
-"use-client";
-import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
-import { motion } from "motion/react";
+// "use-client";
+// import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
+// import { motion } from "motion/react";
 
+// Eski testimonials sistemi - şimdilik yorum satırında
+/*
 const testimonials = [
   {
     text: "This AI workflow builder helped us automate complex tasks effortlessly. Integrating LLMs, tools, and condition-based routing is now drag-and-drop simple.",
@@ -101,3 +103,9 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+*/
+
+// Geçici olarak boş bir bileşen export ediyoruz
+const Testimonials = () => {
+  return null;
+};
