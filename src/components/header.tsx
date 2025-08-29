@@ -18,6 +18,7 @@ const menuItems = [
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
+  const [showComingSoon, setShowComingSoon] = React.useState(false);
 
   const { scrollYProgress } = useScroll();
 
@@ -89,23 +90,31 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="default" size="sm" disabled>
-                  <Link href="#" target="_blank" rel="noopener noreferrer">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                    <span className="text-nowrap">Live Demo</span>
-                  </Link>
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={() => {
+                    setShowComingSoon(true);
+                    setTimeout(() => setShowComingSoon(false), 2000);
+                  }}
+                  className="cursor-pointer"
+                >
+                  <svg
+                    className="w-4 h-4 mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                  <span className="text-nowrap transition-all duration-300">
+                    {showComingSoon ? "Coming Soon" : "Live Demo"}
+                  </span>
                 </Button>
                 <Button asChild variant="outline" size="sm">
                   <Link

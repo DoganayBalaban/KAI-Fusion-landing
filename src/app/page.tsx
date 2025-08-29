@@ -3,6 +3,7 @@ import { Feature108 } from "@/components/blocks/shadcnblocks-com-feature108";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { Zap, Pointer, Layout } from "lucide-react";
 import dynamic from "next/dynamic";
+import { useState } from "react";
 
 const IntegrationsSection = dynamic(
   () => import("@/components/integrations-6")
@@ -75,6 +76,8 @@ const demoData = {
   ],
 };
 export default function Home() {
+  const [showComingSoon, setShowComingSoon] = useState(false);
+
   return (
     <div>
       <WavyBackground className="max-w-6xl mx-auto pb-40 pt-8">
@@ -104,11 +107,12 @@ export default function Home() {
             </svg>
             GitHub
           </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 min-w-[160px] justify-center"
+          <button
+            onClick={() => {
+              setShowComingSoon(true);
+              setTimeout(() => setShowComingSoon(false), 2000);
+            }}
+            className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 min-w-[160px] justify-center cursor-pointer"
           >
             <svg
               className="w-5 h-5"
@@ -123,8 +127,10 @@ export default function Home() {
                 d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
               />
             </svg>
-            Live Demo
-          </a>
+            <span className="transition-all duration-300">
+              {showComingSoon ? "Coming Soon" : "Live Demo"}
+            </span>
+          </button>
         </div>
 
         <div className="mt-8 flex justify-center">
